@@ -53,3 +53,15 @@ body::before{content:none}
 .eyebrow{color:var(--muted)}
 @media (max-width:1100px){.menu-open nav{background:rgba(var(--hdr),.98)}}
 @media (max-width:640px){.hero::before{background:linear-gradient(0deg,rgba(var(--hdr),.97) 0%,rgba(var(--hdr),.86) 55%,rgba(var(--hdr),.5) 100%)}}
+
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px 18px;margin-top:40px}
+.gal figure{break-inside:avoid;margin:0 0 18px}
+.gal a{display:block;overflow:hidden;border-radius:4px;cursor:zoom-in}
+.gal img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .6s ease}
+.gal a:hover img{transform:scale(1.03)}
+.gal .cap{margin-top:10px}
+#lbx{position:fixed;inset:0;z-index:999;background:rgba(20,18,16,.92);display:flex;align-items:center;justify-content:center}
+#lbx[hidden]{display:none}
+#lbx img{max-width:92vw;max-height:90vh;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+#lbx button{position:absolute;background:none;border:0;color:#fff;font-size:44px;cursor:pointer;padding:10px 18px;line-height:1}
+#lbx .x{top:10px;right:14px}#lbx .pv{left:8px}#lbx .nx{right:8px}
